@@ -27,9 +27,6 @@ module.exports = {
       './app/components',
       './app/api'
     ],
-    alias: {
-      applicationStyles: 'app/styles/app.scss'
-    },
     extensions: ['', '.js', '.jsx']
   },
   module: {
@@ -42,11 +39,6 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
       }
-    ]
-  },
-  sassLoader: {
-    includePaths: [
-      path.resolve(__dirname, './node_modules/foundation-sites/scss')
     ]
   },
   devtool: 'cheap-module-eval-source-map'
